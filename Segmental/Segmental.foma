@@ -1,4 +1,3 @@
-define Words @txt"in.txt";
 define Auxiliary ["("|")"];
 define AuxiliaryRemoval Auxiliary -> 0;
 define Voiceless [п|т|к|х];
