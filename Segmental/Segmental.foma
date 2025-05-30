@@ -1,0 +1,38 @@
+define Words @txt"in.txt";
+define Auxiliary ["("|")"];
+define AuxiliaryRemoval Auxiliary -> 0;
+define Voiceless [п|т|к|х];
+define Devoicing з -> с || _ "." Voiceless;
+define Labial [п|б|м];
+define Dental [т|д];
+define Hushing [ч|ж|ш|щ|жд];
+define Palatal [{л҄}|{н҄}|{р҄}];
+define Glide [j|i̯];
+define r1 ѣ -> а || [Hushing|Palatal|Glide] (".") _ ;
+define r2 ы -> и, ъ -> ь || [Hushing|Palatal] (".") _ ;
+define r3 ь -> и || Glide (".") _ ;
+define r4 ь -> и, ъ -> ы || _ Glide ;
+define r5 Glide -> 0 || _ (".") и ;
+define r6 {з.ж} -> жд ;
+define Velar [к|г|х];
+define Simple [Labial|Dental|Velar];
+define Hissing [с|з];
+define Strident [Hushing|ц|s];
+define ClusterSimplification1 Simple -> 0 || _ "." [Labial|Velar] ,, [п|б|м] -> 0, [т|д] -> с || _ "." [т|д] ,, [к|г] "." т -> щ || _ ; 
+define ClusterSimplification2 [Simple|Hissing] -> 0 || _ (".") [Hissing|Strident] ,,
+	[т|д] -> 0 || _ "." [н|л] ,,
+	[..] -> т || с _ "." р ,,
+	[..] -> д || з _ "." р ,,
+	в -> 0 || [п|б|м] "." _ ;
+define ClusterSimplification ClusterSimplification1 .o. ClusterSimplification2;
+define BoundaryRemoval "." -> 0;
+define Morphonology AuxiliaryRemoval
+	.o. r1 .o. r2 .o. r3 .o. r4 .o. r5 .o. r6
+	.o. Devoicing
+	.o. ClusterSimplification
+	.o. BoundaryRemoval;
+define o0 i̯ -> j;
+define o1 а -> ꙗ, е -> ѥ , ѧ -> ѩ , ѫ -> ѭ , у -> ю || [Palatal | j] _ ;
+define o2 j -> 0 || _ [ꙗ|ѥ|ѩ|ѭ|ю];
+define Orthography o0 .o. o1 .o. o2;
+define Segmental Morphonology .o. Orthography;

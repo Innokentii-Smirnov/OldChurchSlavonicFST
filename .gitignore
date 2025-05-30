@@ -1,0 +1,6 @@
+*.bin
+*.txt
+Archive
+*.stackdump
+Morphotactics/Morphotactics1.lexc
+Morphotactics/Morphotactics_aff.lexc

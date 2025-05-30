@@ -1,0 +1,25 @@
+define Front [е|и|ь|ѧ|ѣ];
+define Back [а|о|у|ъ|ы|ѫ];
+define V [Front|Back];
+define Labial [п|б|в|м];
+define Hushing [ш|ж|ч|щ|{жд}];
+define Palatal [{н҄}|{р҄}|{л҄}];
+define Soft [Palatal|Hushing|ц|ѕ|j];
+define Boundary (")") (")") ".";
+define GlideFormation и -> j || "." _ "." V;
+define Iotation1 [..] -> {л҄} || Labial _ Boundary j;
+define Iotation2 т -> щ, д -> {жд}, с -> ш, з -> ж, н -> {н҄}, р -> {р҄}, л -> {л҄},
+к -> ч, г -> ж, х -> ш || _ Boundary j;
+define Iotation3 т -> щ, с -> ш || _ (".") (Labial) {л҄};
+define GlideDeletion "." j -> 0 || [Palatal|Hushing] (")") (")") _ "." V;
+define Iotation Iotation1 .o. Iotation2 .o. Iotation3 .o. GlideDeletion;
+define Palatalization к -> ч, г -> ж, х -> ш, {ск} -> щ || _ Boundary Front;
+define OptionalPalatalization ц (->) ч || _ Boundary Front;
+define Lowering ѣ (->) а || Hushing Boundary _ ;
+define GlideInsertion [..] -> i̯ || V _ ")" (")") "." [V - о], [.#.|V "."] "(" _ Front - и;
+define IotationA {к҄} -> ч || _ ;
+define ProgressivePal к -> ц || ь (")") (%.) _ (%.) а;
+define Fronting ъ -> ь, о -> е, ѣ -> и, ы -> и, ы -> ѧ || Soft Boundary _ .#.;
+define Alternations GlideFormation .o. Iotation .o. Palatalization .o. 
+OptionalPalatalization .o. Lowering .o. GlideInsertion .o. IotationA .o.
+ProgressivePal .o. Fronting;

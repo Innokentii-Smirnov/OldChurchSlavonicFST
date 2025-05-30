@@ -1,0 +1,5 @@
+read lexc ../Morphotactics/Morphotactics.lexc
+define Lexicon;
+load stack ../Alternations/Alternations.bin
+define Alternations;
+define Morphotactics [Lexicon .o. Alternations].l;
