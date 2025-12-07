@@ -6,5 +6,5 @@ cd $directory
 foma -e "source $name.foma" -e "push $name" -e "save stack $binary" -e "sigma" -e "exit"
 echo "Created Foma binary $binary."
 cd ..
-flookup -s " ← " -b "$directory/$binary" < input.txt > output.txt
+tr -d '12/ ' < input.txt | flookup -s " ← " -b "$directory/$binary" > output.txt
 python evaluate.py
