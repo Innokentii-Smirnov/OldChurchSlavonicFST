@@ -13,7 +13,7 @@ else:
 correct = set()
 errors = set()
 n_correct = 0
-total = 0
+total_predicted = 0
 with open('output.txt') as fin, open('corr.txt') as ref, open('correct.txt', 'w') as corrf, open('errors.txt', 'w') as errf, open('missing.txt', 'w') as mf:
 	it = iter(ref)
 	new_word = True
@@ -23,7 +23,7 @@ with open('output.txt') as fin, open('corr.txt') as ref, open('correct.txt', 'w'
 			new_word = False
 		line = line.rstrip()
 		if line != '':
-			total += 1
+			total_predicted += 1
 			word, segm = line.split(' ← ')
 			if segm == corr:
 				string = '{0:20} {1}'.format(word, segm)
@@ -52,5 +52,5 @@ with open('new_correct.txt', 'w') as fout:
 with open('new_errors.txt', 'w') as fout:
 	for string in new_errors:
 		fout.write(string + '\n')
-accuracy = 100 * n_correct / total
-print('Accuracy: {0} % ({1} / {2}).'.format(round(accuracy, 2), n_correct, total))
+precision = 100 * n_correct / total_predicted
+print('Precision: {0} % ({1} / {2}).'.format(round(precision, 2), n_correct, total_predicted))
