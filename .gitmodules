@@ -1,3 +1,6 @@
 [submodule "TestMorph"]
 	path = TestMorph
 	url = https://github.com/Innokentii-Smirnov/TestMorph.git
+[submodule "CompileFST"]
+	path = CompileFST
+	url = https://github.com/Innokentii-Smirnov/CompileFST.git
