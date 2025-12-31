@@ -276,7 +276,7 @@ LEXICON Stem
 .т		Inf;
 .н		Part;
 .ен		Part;
-.л		Part;
+!.л		Part;
 ! Группа 8
 .л.ьн	2/n;
 .л		2/n;
