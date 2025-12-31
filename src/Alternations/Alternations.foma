@@ -8,9 +8,7 @@ define Soft [Palatal|Hushing|ц|ѕ|j];
 define Boundary (")") (")") ".";
 define GlideFormation и -> j || "." _ "." V;
 define Iotation1 [..] -> {л҄} || Labial _ Boundary j;
-define ParClusterIotation с ")" (".") [т|к] -> щ ")", з ")" (".") [д|г] -> {жд} ")"  || _ Boundary j;
-define NormClusterIotation с (".") [т|к] -> щ, з (".") [д|г] -> {жд}  || _ Boundary j;
-define ClusterIotation ParClusterIotation .o. NormClusterIotation;
+define ClusterIotation с (".") [т|к] -> щ, з (".") [д|г] -> {жд}  || _ Boundary j;
 define Iotation2 т -> щ, д -> {жд}, с -> ш, з -> ж, н -> {н҄}, р -> {р҄}, л -> {л҄},
 к -> ч, г -> ж, х -> ш || _ Boundary j;
 define Iotation3 т -> щ, с -> ш || _ (".") (Labial) {л҄};
