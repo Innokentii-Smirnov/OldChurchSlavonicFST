@@ -260,8 +260,8 @@ LEXICON V
 ! 0		2/m;
 
 LEXICON tDeriv
-.л		2/n;
-.л		1/f;
+!.л		2/n;
+!.л		1/f;
 .ыр҄	2/m;
 .ер		2/f;
 .ух		2/m;
