@@ -1,4 +1,4 @@
-filepath="Segmentation/Segmentation.foma"
+filepath="src/Segmentation/Segmentation.foma"
 directory=$(dirname "$filepath")
 name=$(basename "$filepath" .foma)
 binary="$name.bin"
