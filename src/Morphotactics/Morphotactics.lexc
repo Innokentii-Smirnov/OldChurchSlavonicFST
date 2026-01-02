@@ -254,7 +254,7 @@ LEXICON V
 .ищ		2/n;
 .ѫщ		Part;
 ! Группа 17
-.ѣ		DerivedClass7;
+!.ѣ		DerivedClass7;
 ! 0		2/f;
 ! 0		2/m;
 
