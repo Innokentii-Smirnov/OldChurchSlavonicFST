@@ -719,6 +719,7 @@ LEXICON Radical
 (дрѫж)		 1;
 (дрѫч)		 1;
 (ду)		 4v;
+(ду)		 5;
 (дух)		 2/m;
 (душ)		 1;
 (душ)		 2/f;
@@ -2177,12 +2178,12 @@ LEXICON 4
 Infinitive;
 V;
 .и		DerivedVerb; ! Каузативы
-5;
 7;
 .в	7;
 
 LEXICON 4c
 4;
+5;
 
 LEXICON 4c*↪
 4c;
