@@ -19,7 +19,7 @@ define Iotation Iotation1 .o. ClusterIotation .o. Iotation2 .o. Iotation3 .o. Gl
 define Palatalization к -> ч, г -> ж, х -> ш, {ск} -> щ || _ Boundary Front;
 define OptionalPalatalization ц (->) ч || _ Boundary Front;
 define Lowering ѣ (->) а || Hushing Boundary _ ;
-define GlideInsertion [..] -> i̯ || V _ ")" (")") "." [V - о], [.#.|V "."] "(" _ Front - и;
+define GlideInsertion [..] -> i̯ || [V - и] _ ")" (")") "." [V - о], [.#.|V "."] "(" _ Front - и;
 define IotationA {к҄} -> ч || _ ;
 define ProgressivePal к -> ц || ь (")") (%.) _ (%.) а;
 define Fronting ъ -> ь, о -> е, ѣ -> и, ы -> и, ы -> ѧ || Soft Boundary _ .#.;
