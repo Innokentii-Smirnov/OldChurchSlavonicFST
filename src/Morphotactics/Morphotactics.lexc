@@ -2177,11 +2177,11 @@ LEXICON 3o*
 LEXICON 4
 Infinitive;
 V;
-.и		DerivedVerb; ! Каузативы
 7;
 .в	7;
 
 LEXICON 4c
+.и		DerivedVerb; ! Каузативы
 4;
 5;
 
