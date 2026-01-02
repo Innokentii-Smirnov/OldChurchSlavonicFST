@@ -6,6 +6,8 @@ define Hushing [ш|ж|ч|щ|{жд}];
 define Palatal [{н҄}|{р҄}|{л҄}];
 define Soft [Palatal|Hushing|ц|ѕ|j];
 define Boundary (")") (")") ".";
+define C [Labial|т|д|с|з|н|л|р|к|г|х|Soft];
+define IpfvAblaut о (->) а || _ C+ {).и.а};
 define GlideFormation и -> j || "." _ "." V;
 define Iotation1 [..] -> {л҄} || Labial _ Boundary j;
 define ClusterIotation с (".") [т|к] -> щ, з (".") [д|г] -> {жд}  || _ Boundary j;
@@ -21,6 +23,6 @@ define GlideInsertion [..] -> i̯ || V _ ")" (")") "." [V - о], [.#.|V "."] "("
 define IotationA {к҄} -> ч || _ ;
 define ProgressivePal к -> ц || ь (")") (%.) _ (%.) а;
 define Fronting ъ -> ь, о -> е, ѣ -> и, ы -> и, ы -> ѧ || Soft Boundary _ .#.;
-define Alternations GlideFormation .o. Iotation .o. Palatalization .o. 
+define Alternations IpfvAblaut .o. GlideFormation .o. Iotation .o. Palatalization .o.
 OptionalPalatalization .o. Lowering .o. GlideInsertion .o. IotationA .o.
 ProgressivePal .o. Fronting;
