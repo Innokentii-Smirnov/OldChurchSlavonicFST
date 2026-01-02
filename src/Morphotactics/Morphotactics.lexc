@@ -272,7 +272,7 @@ LEXICON Stem
 !.в		V;
 ! Группа 5
 .зн		1/f;
-.т		Inf;
+Infinitive;
 .н		Part;
 .ен		Part;
 !.л		Part;
@@ -280,6 +280,9 @@ LEXICON Stem
 .л.ьн	2/n;
 .л		2/n;
 .а		DerivedVerb;
+
+LEXICON Infinitive
+.т		Inf;
 
 LEXICON DerivedVerb
 Stem;
@@ -2171,7 +2174,7 @@ LEXICON 3o*
 3;
 
 LEXICON 4
-Stem;
+Infinitive;
 V;
 .и		DerivedVerb; ! Каузативы
 5;
