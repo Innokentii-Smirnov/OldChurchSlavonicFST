@@ -254,7 +254,6 @@ LEXICON V
 .ищ		2/n;
 .ѫщ		Part;
 ! Группа 17
-.а		DerivedClass7;
 .ѣ		DerivedClass7;
 ! 0		2/f;
 ! 0		2/m;
@@ -2083,6 +2082,7 @@ LEXICON %0/s
 
 LEXICON 1
 .и	Stem;
+Imperfective;
 V;
 
 LEXICON 1/a
@@ -2215,6 +2215,7 @@ LEXICON 4v∇
 
 LEXICON 5
 .н		DerivedClass5;
+Imperfective;
 V;
 
 LEXICON 6
@@ -2235,6 +2236,9 @@ V;
 LEXICON DerivedClass5
 .ѫ		Stem;
 .ов		Stem;
+
+LEXICON Imperfective
+.а		DerivedClass7;
 
 LEXICON DerivedClass7
 Stem;
