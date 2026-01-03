@@ -7,7 +7,7 @@ define Palatal [{н҄}|{р҄}|{л҄}];
 define Soft [Palatal|Hushing|ц|ѕ|j];
 define Boundary (")") (")") ".";
 define C [Labial|т|д|с|з|н|л|р|к|г|х|Soft];
-define IpfvAblaut о (->) а || _ C+ {).и.а};
+define IpfvAblaut о (->) а || _ C+ (")") {).и.а};
 define GlideFormation и -> j || "." _ "." V;
 define Iotation1 [..] -> {л҄} || Labial _ Boundary j;
 define ClusterIotation с (".") [т|к] -> щ, з (".") [д|г] -> {жд}  || _ Boundary j;
