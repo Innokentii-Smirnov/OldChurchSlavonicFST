@@ -16,7 +16,9 @@ define Iotation2 т -> щ, д -> {жд}, с -> ш, з -> ж, н -> {н҄}, р ->
 define Iotation3 т -> щ, с -> ш || _ (".") (Labial) {л҄};
 define GlideDeletion "." j -> 0 || [Palatal|Hushing] (")") (")") _ "." V;
 define Iotation Iotation1 .o. ClusterIotation .o. Iotation2 .o. Iotation3 .o. GlideDeletion;
-define Palatalization к -> ч, г -> ж, х -> ш, {ск} -> щ || _ Boundary Front;
+define ClusterPalatalization {ск} -> щ || _ Boundary Front;
+define SimplePalatalization к -> ч, г -> ж, х -> ш || _ Boundary Front;
+define Palatalization ClusterPalatalization .o. SimplePalatalization;
 define OptionalPalatalization ц (->) ч || _ Boundary Front;
 #define Lowering ѣ (->) а || Hushing Boundary _ ;
 define GlideInsertion [..] -> i̯ || [V - и] _ ")" (")") "." [V - о], [.#.|V "."] "(" _ Front - и;
