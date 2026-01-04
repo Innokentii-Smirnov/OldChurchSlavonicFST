@@ -1,10 +1,11 @@
-Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@
+Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@
 
 LEXICON Root
 Prefix;
 
 LEXICON Prefix
 <"@P.ORIENT.OTHER@"@txt"../Morphotactics/Prefixes.txt"%.>	Prefix;
+@P.POS.N@па.  Radical;
 @P.ORIENT.ELAT@от.  Prefix;
 съ. Prefix;
 у.  Prefix;
@@ -292,7 +293,7 @@ LEXICON DerivedVerb
 Stem;
 
 LEXICON Inf
-.и		#;
+@D.POS.N@.и		#;
 .в		2/f;
 .ел҄	2/m+;
 !1/f;
