@@ -144,7 +144,7 @@ LEXICON N
 .ищ		2/m;
 .ищ		2/n;
 ! Группа 17
-.и		DerivedVerb;
+@D.ORIENT.ELAT@.и		DerivedVerb;
 .а		DerivedVerb;
 ! Группа 18
 .ов		2/a;
