@@ -295,7 +295,7 @@ LEXICON Inf
 .и		#;
 .в		2/f;
 .ел҄	2/m+;
-1/f;
+!1/f;
 
 LEXICON Part
 A;
