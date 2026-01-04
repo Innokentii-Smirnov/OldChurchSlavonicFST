@@ -1,3 +1,4 @@
 source ../Morphotactics/Morphotactics.foma
 source ../Segmental/Segmental.foma
 define Segmentation Morphotactics .o. Segmental;
+show variables

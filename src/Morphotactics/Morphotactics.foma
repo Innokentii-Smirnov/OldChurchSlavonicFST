@@ -1,4 +1,5 @@
 read lexc ../Morphotactics/Morphotactics.lexc
 define Lexicon;
 source ../Alternations/Alternations.foma
+set flag-is-epsilon ON
 define Morphotactics [Lexicon .o. Alternations].l;

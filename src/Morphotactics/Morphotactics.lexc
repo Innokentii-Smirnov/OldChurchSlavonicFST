@@ -1,10 +1,11 @@
-Multichar_Symbols i̯
+Multichar_Symbols i̯ @P.PREFIX.OT@ @D.PREFIX.OT@
 
 LEXICON Root
 Prefix;
 
 LEXICON Prefix
 <@txt"../Morphotactics/Prefixes.txt"%.>	Prefix;
+@P.PREFIX.OT@от.  Prefix;
 Radical;
 
 LEXICON r
@@ -190,7 +191,7 @@ LEXICON A
 .и		DerivedVerb;
 .н		DerivedClass5;
 .ов.а		DerivedVerb;
-.ѣ		DerivedVerb;
+@D.PREFIX.OT@.ѣ		DerivedVerb;
 ! Группа 18
 ! 0		%0/n;
 .ьi̯		2/a;
