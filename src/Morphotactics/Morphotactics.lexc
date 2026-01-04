@@ -191,7 +191,7 @@ LEXICON A
 .ош		1/f;
 .ош		2/f;
 ! Группа 17
-.и		DerivedVerb;
+@D.ORIENT.ELAT@.и		DerivedVerb;
 .н		DerivedClass5;
 .ов.а		DerivedVerb;
 @D.ORIENT.ELAT@.ѣ		DerivedVerb;
