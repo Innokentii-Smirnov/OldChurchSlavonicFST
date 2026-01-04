@@ -1,11 +1,14 @@
-Multichar_Symbols i̯ @P.PREFIX.OT@ @D.PREFIX.OT@
+Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@
 
 LEXICON Root
 Prefix;
 
 LEXICON Prefix
-<@txt"../Morphotactics/Prefixes.txt"%.>	Prefix;
-@P.PREFIX.OT@от.  Prefix;
+<"@P.ORIENT.OTHER@"@txt"../Morphotactics/Prefixes.txt"%.>	Prefix;
+@P.ORIENT.ELAT@от.  Prefix;
+съ. Prefix;
+у.  Prefix;
+об. Prefix;
 Radical;
 
 LEXICON r
@@ -191,7 +194,7 @@ LEXICON A
 .и		DerivedVerb;
 .н		DerivedClass5;
 .ов.а		DerivedVerb;
-@D.PREFIX.OT@.ѣ		DerivedVerb;
+@D.ORIENT.ELAT@.ѣ		DerivedVerb;
 ! Группа 18
 ! 0		%0/n;
 .ьi̯		2/a;
@@ -1310,7 +1313,7 @@ LEXICON Radical
 (пан)		 NU;
 (пап)		 r;
 ((папрьт))	 2/m;
-(пас)		 4c;
+@D.ORIENT@(пас)		 4c;
 (пек)		 4c∇;
 ((пелен))	 2/f;
 ((пепел))	 1;
