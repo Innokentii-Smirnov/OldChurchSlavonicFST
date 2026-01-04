@@ -2185,7 +2185,6 @@ LEXICON 4
 Infinitive;
 V;
 7;
-.в	7;
 
 LEXICON 4c
 .и		DerivedVerb; ! Каузативы
@@ -2207,6 +2206,7 @@ LEXICON 4h*#↩
 
 LEXICON 4h*↩
 4h;
+vaImperfective;
 
 LEXICON 4h*↪
 4h;
@@ -2216,9 +2216,11 @@ LEXICON 4hj
 
 LEXICON 4h↩
 4h;
+vaImperfective;
 
 LEXICON 4v
 4;
+vaImperfective;
 OpenRoot;
 
 LEXICON 4v∇
@@ -2235,9 +2237,14 @@ V;
 
 LEXICON 7a
 .а	Stem;
+V;
 
 LEXICON 7e
-.ѣ	Stem;
+.ѣ	7eCont;
+
+LEXICON 7eCont
+Stem;
+vaImperfective;
 
 LEXICON 7
 7a;
@@ -2256,6 +2263,9 @@ LEXICON DerivedClass5
 
 LEXICON Imperfective
 .а		DerivedClass7;
+
+LEXICON vaImperfective
+.в		7a;
 
 LEXICON DerivedClass7
 Stem;
