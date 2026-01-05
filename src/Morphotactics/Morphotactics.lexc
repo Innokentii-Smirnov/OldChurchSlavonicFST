@@ -2093,16 +2093,22 @@ LEXICON %0/m
 N;
 
 LEXICON %0/n
+esNeutra;
+enNeutra;
+entNeutra;
+
+LEXICON esNeutra
 .о	#;
 .ес	Neutrum;
-entNeutra
-.ѧ	#;
-.ѧт	Neutrum;
 Neutrum;
+
+LEXICON enNeutra
+.ѧ	#;
+.ен	Neutrum;
 
 LEXICON entNeutra
 .ѧ	#;
-.ен	Neutrum;
+.ѧт	Neutrum;
 
 LEXICON %0/p
 .ь	#;
