@@ -19,6 +19,7 @@ define Hissing [с|з];
 define Strident [Hushing|ц|s];
 define ClusterSimplification1 Simple -> 0 || _ "." [Labial|Velar] ,, [п|б|м] -> 0, [т|д] -> с || _ "." [т|д] ,, [к|г] "." т -> щ || _ ; 
 define ClusterSimplification2 [Simple|Hissing] -> 0 || _ (".") [Hissing|Strident] ,,
+    б (->) 0 || _ "." н ,,
 	[т|д] -> 0 || _ "." [н|л] ,,
 	[..] -> т || с _ "." р ,,
 	[..] -> д || з _ "." р ,,
