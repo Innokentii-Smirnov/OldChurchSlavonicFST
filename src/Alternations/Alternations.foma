@@ -24,7 +24,9 @@ define Lowering ѣ -> а || Hushing "." _ "."; # Only in the verbal suffix and n
 define GlideInsertion [..] -> i̯ || [V - и] _ ")" (")") "." [V - о], [.#.|V "."] "(" _ Front - и;
 define IotationA {к҄} -> ч || _ ;
 define ProgressivePal к -> ц || ь (")") (%.) _ (%.) а;
-define Fronting ъ -> ь, о -> е, ѣ -> и, ы -> и, ы -> ѧ || Soft Boundary _ .#.;
+define FinalFronting ѣ -> и, ы -> и, ы -> ѧ || Soft Boundary _ .#.;
+define GeneralFronting ъ -> ь, о -> е, ы -> и || Soft Boundary _ ;
+define Fronting FinalFronting .o. GeneralFronting;
 define Alternations IpfvAblaut .o. GlideFormation .o. Iotation .o. Palatalization .o.
 OptionalPalatalization .o. Lowering .o. GlideInsertion .o. IotationA .o.
 ProgressivePal .o. Fronting;
