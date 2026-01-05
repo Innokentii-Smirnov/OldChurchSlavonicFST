@@ -271,7 +271,7 @@ LEXICON tDeriv
 .ер		2/f;
 .ух		2/m;
 .в		2/a;
-.ел҄	2/m;
+!.ел҄	2/m;
 
 LEXICON Stem
 ! Группа 2
