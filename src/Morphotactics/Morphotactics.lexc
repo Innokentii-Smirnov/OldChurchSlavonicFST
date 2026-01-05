@@ -156,7 +156,7 @@ LEXICON N
 .ен		1/m;
 ! 0		%0/n;
 .j		2/aNoDeriv;
-enNeutra;
+entNeutra;
 
 LEXICON A
 ! Группа 1
@@ -2095,13 +2095,12 @@ N;
 LEXICON %0/n
 .о	#;
 .ес	Neutrum;
-.ѧ	#;
-.ен	Neutrum;
+entNeutra
 .ѧ	#;
 .ѧт	Neutrum;
 Neutrum;
 
-LEXICON enNeutra
+LEXICON entNeutra
 .ѧ	#;
 .ен	Neutrum;
 
