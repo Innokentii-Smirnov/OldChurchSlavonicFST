@@ -156,6 +156,7 @@ LEXICON N
 .ен		1/m;
 ! 0		%0/n;
 .j		2/aNoDeriv;
+enNeutra;
 
 LEXICON A
 ! Группа 1
@@ -460,7 +461,7 @@ LEXICON Radical
 ((вельбѫд))	 2/m;
 ((вельбѫжд)) 2/a;
 (вер)		 r;
-(вес)		 r;
+(вес).ел	 2/a;
 (весн)		 2/f;
 (вет)		 r;
 (веч)		 r;
@@ -2099,6 +2100,10 @@ LEXICON %0/n
 .ѧ	#;
 .ѧт	Neutrum;
 Neutrum;
+
+LEXICON enNeutra
+.ѧ	#;
+.ен	Neutrum;
 
 LEXICON %0/p
 .ь	#;
