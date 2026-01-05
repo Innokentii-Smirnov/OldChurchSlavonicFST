@@ -147,7 +147,7 @@ LEXICON N
 .ищ		2/m;
 .ищ		2/n;
 ! Группа 17
-@D.ORIENT.ELAT@.и		DerivedVerb;
+@D.ORIENT.ELAT@.и		iDerivedVerb;
 .а		DerivedVerb;
 ! Группа 18
 .ов		2/a;
@@ -276,13 +276,19 @@ LEXICON tDeriv
 .в		2/a;
 !.ел҄	2/m;
 
+LEXICON iStem
+CommonStem;
+
 LEXICON Stem
+.н		Part;
+CommonStem;
+
+LEXICON CommonStem
 ! Группа 2
 !.в		V;
 ! Группа 5
 .зн		1/f;
 Infinitive;
-.н		Part;
 .ен		Part;
 !.л		Part;
 ! Группа 8
@@ -292,6 +298,9 @@ Infinitive;
 
 LEXICON Infinitive
 @D.POS.N@.т		Inf;
+
+LEXICON iDerivedVerb
+iStem;
 
 LEXICON DerivedVerb
 Stem;
@@ -2127,7 +2136,7 @@ LEXICON %0/s
 #;
 
 LEXICON 1
-.и	Stem;
+.и	iStem;
 Imperfective;
 V;
 
