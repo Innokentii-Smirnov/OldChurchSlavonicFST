@@ -6,6 +6,7 @@ Prefix;
 LEXICON Prefix
 <"@P.ORIENT.OTHER@"@txt"../Morphotactics/Prefixes.txt"%.>	Prefix;
 @P.POS.N@па.  Radical;
+@P.POS.N@пра.  Radical;
 @P.ORIENT.ELAT@от.  Prefix;
 съ. Prefix;
 у.  Prefix;
