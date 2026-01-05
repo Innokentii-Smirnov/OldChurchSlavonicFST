@@ -1,4 +1,4 @@
-Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@
+Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@ @P.CAR.ON@ @R.CAR.ON@
 
 LEXICON Root
 Prefix;
@@ -8,6 +8,7 @@ LEXICON Prefix
 @P.POS.N@па.  Radical;
 @P.POS.N@пра.  Radical;
 @P.ORIENT.ELAT@от.  Prefix;
+@P.CAR.ON@без.  Radical;
 съ. Prefix;
 у.  Prefix;
 об. Prefix;
@@ -157,6 +158,7 @@ LEXICON N
 ! 0		%0/n;
 .j		2/aNoDeriv;
 entNeutra;
+@R.CAR.ON@  2/a; ! Only after the caritive prefix без-
 
 LEXICON A
 ! Группа 1
