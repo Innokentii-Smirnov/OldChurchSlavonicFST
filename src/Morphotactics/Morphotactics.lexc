@@ -288,13 +288,13 @@ Infinitive;
 .а		DerivedVerb;
 
 LEXICON Infinitive
-.т		Inf;
+@D.POS.N@.т		Inf;
 
 LEXICON DerivedVerb
 Stem;
 
 LEXICON Inf
-@D.POS.N@.и		#;
+.и		#;
 .в		2/f;
 .ел҄	2/m+;
 !1/f;
