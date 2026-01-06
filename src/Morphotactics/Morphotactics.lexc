@@ -2171,8 +2171,12 @@ LEXICON 1/m
 N;
 
 LEXICON 2
-.ѣ	Stem;
+.ѣ	eStem;
 V;
+
+LEXICON eStem
+Stem;
+vaImperfective;
 
 LEXICON 2/a
 .ъ	#;
