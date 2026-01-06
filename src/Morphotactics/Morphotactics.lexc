@@ -2329,6 +2329,7 @@ LEXICON vaImperfective
 
 LEXICON DerivedClass7
 Stem;
+vaImperfective;
 
 LEXICON NU
 N;
