@@ -7,6 +7,8 @@ define Palatal [{н҄}|{р҄}|{л҄}];
 define Soft [Palatal|Hushing|ц|ѕ|j];
 define Boundary (")") (")") ".";
 define C [Labial|т|д|с|з|н|л|р|к|г|х|Soft];
+define ClosedForm и -> {ьj}, ы -> {ъв} || _ ")" %+ClosedForm .o. %+ClosedForm -> 0 || _ ;
+define ZeroGrade [ѣ|и] -> ь || _ C+ ")" %+ZeroGrade .o. %+ZeroGrade -> 0 || _ ;
 define Consonantization [..] -> {.в} || и ")" (")") _ {.а.т.и};
 define IpfvAblaut о (->) а || _ C+ (")") {).и.а};
 define GlideFormation и -> j || "." _ "." V;
@@ -28,6 +30,7 @@ define ProgressivePal к -> ц || ь (")") (%.) _ (%.) а;
 define FinalFronting ѣ -> и, ы -> и, ы -> ѧ || Soft Boundary _ .#.;
 define GeneralFronting ъ -> ь, о -> е, ы -> и || Soft Boundary _ ;
 define Fronting FinalFronting .o. GeneralFronting;
-define Alternations Consonantization .o. IpfvAblaut .o. GlideFormation .o. Iotation .o. Palatalization .o.
+define Alternations ClosedForm .o. ZeroGrade .o. Consonantization .o. IpfvAblaut .o.
+GlideFormation .o. Iotation .o. Palatalization .o.
 OptionalPalatalization .o. Lowering .o. GlideInsertion .o. IotationA .o.
 ProgressivePal .o. Fronting;

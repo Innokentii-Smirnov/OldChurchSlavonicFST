@@ -1,4 +1,4 @@
-Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@ @P.CAR.ON@ @R.CAR.ON@
+Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@ @P.CAR.ON@ @R.CAR.ON@ +ZeroGrade +ClosedForm
 
 LEXICON Root
 Prefix;
@@ -290,12 +290,15 @@ LEXICON CommonStem
 ! Группа 5
 .зн		1/f;
 Infinitive;
-.ен		Part;
+enPart;
 !.л		Part;
 ! Группа 8
 .л.ьн	2/n;
 .л		2/n;
 .а		DerivedVerb;
+
+LEXICON enPart
+.ен		Part;
 
 LEXICON Infinitive
 @D.POS.N@.т		Inf;
@@ -431,15 +434,14 @@ LEXICON Radical
 (буд)		 1;
 !(бужд)		 7;
 (бур҄)		 2/f;
-(бъв)		 r;
 (бъд)		 2;
 (бъд)		 5;
 (бъд).р		 2/a;
 ((бъчел))	 2/f;
 (бы)		 %0;
+(бъв)		 enPart;
 (быв)		 7;
 (быстр)		 2/a;
-(бьj)		 r;
 (бьр)		 3o*;
 (бѣж)		 2; ! 69
 (бѣг)		 5; ! 69
@@ -530,7 +532,6 @@ LEXICON Radical
 (врач)		 2/m;
 (врьб)		 NU;	! 119
 (врьв)		 1/f;
-(врьж)		 r;
 (врьз)		 7;
 (врьт)		 2/m; ! 123
 (врьт).т	 2/f; ! 124
@@ -1217,7 +1218,6 @@ LEXICON Radical
 (мрѣж)		 2/f;
 ((мрѣкор)).ьj	 2/f;
 (мух)		 2/f;
-(мъв)		 r;
 (мъд)		 r;
 (мък)		 5;
 (мън)		 r;
@@ -2255,6 +2255,7 @@ LEXICON 4c
 
 LEXICON 4c*↪
 4c;
++ZeroGrade enPart;
 
 LEXICON 4c∇
 4c;
@@ -2265,10 +2266,12 @@ OpenRoot;
 
 LEXICON 4h*#↩
 4h;
++ClosedForm enPart;
 
 LEXICON 4h*↩
 4h;
 vaImperfective;
++ClosedForm enPart;
 
 LEXICON 4h*↪
 4h;
