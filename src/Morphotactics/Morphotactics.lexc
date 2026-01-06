@@ -2325,7 +2325,7 @@ LEXICON Imperfective
 .а		DerivedClass7;
 
 LEXICON vaImperfective
-.в		7a;
+.в.а	Stem;
 
 LEXICON DerivedClass7
 Stem;
