@@ -5,6 +5,9 @@ define Labial [п|б|в|м];
 define Hushing [ш|ж|ч|щ|{жд}];
 define Palatal [{н҄}|{р҄}|{л҄}];
 define Soft [Palatal|Hushing|ц|ѕ|j];
+define RootBoundary ")" (")");
+define OptRootBoundary (RootBoundary);
+define IotationContext OptRootBoundary %+Iotation;
 define Boundary (")") (")") ".";
 define C [Labial|т|д|с|з|н|л|р|к|г|х|Soft];
 define ClosedForm и -> {ьj}, ы -> {ъв} || _ ")" %+ClosedForm .o. %+ClosedForm -> 0 || _ ;
@@ -12,13 +15,13 @@ define ZeroGrade [ѣ|и] -> ь || _ C+ ")" %+ZeroGrade .o. %+ZeroGrade -> 0 || _
 define Consonantization [..] -> {.в} || и ")" (")") _ {.а.т.и};
 define OptConsonantization [..] (->) {.в} || [и|ѣ|у] ")" _ "." V;
 define IpfvAblaut о (->) а || _ C+ (")") {).и.а};
-define GlideFormation и -> j || "." _ "." V;
-define Iotation1 [..] -> {л҄} || Labial _ Boundary j;
-define ClusterIotation с (".") [т|к] -> щ, з (".") [д|г] -> {жд}  || _ Boundary j;
+define GlideFormation {.и} -> %+Iotation || _ "." V;
+define Iotation1 [..] -> {л҄} || Labial _ IotationContext;
+define ClusterIotation с (".") [т|к] -> щ, з (".") [д|г] -> {жд}  || _ IotationContext;
 define Iotation2 т -> щ, д -> {жд}, с -> ш, з -> ж, н -> {н҄}, р -> {р҄}, л -> {л҄},
-[к|ц] -> ч, г -> ж, х -> ш || _ Boundary j;
+[к|ц] -> ч, г -> ж, х -> ш || _ IotationContext;
 define Iotation3 т -> щ, с -> ш || _ (".") (Labial) {л҄};
-define GlideDeletion "." j -> 0 || [Palatal|Hushing] (")") (")") _ "." V;
+define GlideDeletion %+Iotation -> 0 || [Palatal|Hushing] (")") (")") _ "." V;
 define Iotation Iotation1 .o. ClusterIotation .o. GlideDeletion .o. Iotation2 .o. Iotation3 .o. GlideDeletion;
 define ClusterPalatalization {ск} -> щ || _ Boundary Front;
 define SimplePalatalization к -> ч, г -> ж, х -> ш || _ Boundary Front;

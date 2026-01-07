@@ -1,4 +1,4 @@
-Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@ @P.CAR.ON@ @R.CAR.ON@ +ZeroGrade +ClosedForm
+Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@ @P.CAR.ON@ @R.CAR.ON@ +ZeroGrade +ClosedForm +Iotation
 
 LEXICON Root
 Prefix;
@@ -156,7 +156,7 @@ LEXICON N
 .ев		N;
 .ен		1/m;
 ! 0		%0/n;
-.j		2/aNoDeriv;
++Iotation	2/aNoDeriv;
 entNeutra;
 @R.CAR.ON@  2/a; ! Only after the caritive prefix без-
 
