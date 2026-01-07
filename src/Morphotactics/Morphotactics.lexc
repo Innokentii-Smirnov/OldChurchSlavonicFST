@@ -2153,7 +2153,7 @@ LEXICON %0/s
 
 LEXICON 1
 .и	iStem;
-Imperfective;
+!Imperfective;
 V;
 
 LEXICON 1/a
