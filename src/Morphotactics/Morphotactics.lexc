@@ -504,7 +504,7 @@ LEXICON Radical
 (вид).т		 1/f;
 (вин)		 2/n;
 ((виноград)) 2/m;
-(вис)		 r;
+(вис)		 eVerb;
 (вит)		 7a; ! 102
 (влаг)		 2/f;
 (влад)		 4c;
@@ -2421,3 +2421,7 @@ LEXICON ConsonantizedOpenRoot
 LEXICON Stative
 2;
 5;
+
+LEXICON eVerb
+2;
+7e;
