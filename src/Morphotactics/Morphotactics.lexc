@@ -1,4 +1,4 @@
-Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@ @P.CAR.ON@ @R.CAR.ON@ +ZeroGrade +ClosedForm +Iotation
+Multichar_Symbols i̯ @P.ORIENT.ELAT@ @D.ORIENT.ELAT@ @P.ORIENT.OTHER@ @D.ORIENT@ @P.POS.N@ @D.POS.N@ @P.CAR.ON@ @R.CAR.ON@ +ZeroGrade +ClosedForm +Iotation +Class7
 
 LEXICON Root
 Prefix;
@@ -2329,7 +2329,7 @@ LEXICON 7a
 V;
 
 LEXICON 7e
-.ѣ	CommonClass7;
+.ѣ+Class7	CommonClass7;
 
 LEXICON 7
 7a;

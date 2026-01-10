@@ -27,7 +27,7 @@ define ClusterPalatalization {ск} -> щ || _ Boundary Front;
 define SimplePalatalization к -> ч, г -> ж, х -> ш || _ Boundary Front;
 define Palatalization ClusterPalatalization .o. SimplePalatalization;
 define OptionalPalatalization ц (->) ч || _ Boundary Front;
-define Lowering ѣ -> а || Hushing "." _ "."; # Only in the verbal suffix and not after a root boundary.
+define Lowering ѣ -> а || Hushing "." _ %+Class7 "." .o. %+Class7 -> 0 || _ ; # Only in the class 7 verbal suffix and not after a root boundary.
 define GlideInsertion [..] -> i̯ || [V - и] _ ")" (")") "." [V - о], [.#.|V "."] "(" _ Front - и;
 define IotationA {к҄} -> ч || _ ;
 define ProgressivePal к -> ц || ь (")") (%.) _ (%.) а;
