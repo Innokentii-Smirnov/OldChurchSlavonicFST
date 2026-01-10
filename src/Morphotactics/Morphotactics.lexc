@@ -300,6 +300,12 @@ Imperfective;
 LEXICON enPart
 .ен		Part;
 
+LEXICON tPart
+.т		DeverbalNoun;
+
+LEXICON DeverbalNoun
+.ьj		2/n;
+
 LEXICON Infinitive
 @D.POS.N@.т		Inf;
 
@@ -2274,6 +2280,7 @@ LEXICON 4c∇
 LEXICON 4h
 4;
 OpenRoot;
+tPart;
 
 LEXICON 4h*#↩
 4h;
@@ -2298,6 +2305,7 @@ LEXICON 4v
 4;
 vaImperfective;
 OpenRoot;
+tPart;
 
 LEXICON 4v∇
 4v;
