@@ -199,7 +199,7 @@ LEXICON A
 @D.ORIENT.ELAT@.и		DerivedVerb;
 .н		DerivedClass5;
 .ов.а		DerivedVerb;
-@D.ORIENT.ELAT@.ѣ		DerivedClass7;
+@D.ORIENT.ELAT@.ѣ+Class7	DerivedClass7;
 ! Группа 18
 ! 0		%0/n;
 .ьi̯		2/a;
