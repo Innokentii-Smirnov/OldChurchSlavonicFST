@@ -304,6 +304,9 @@ LEXICON enPart
 LEXICON tPart
 .т		DeverbalNoun;
 
+LEXICON nPart
+.н		DeverbalNoun;
+
 LEXICON DeverbalNoun
 .ьj		2/n;
 
@@ -2314,6 +2317,7 @@ LEXICON 4v
 vaImperfective;
 OpenRoot;
 tPart;
+nPart;
 
 LEXICON 4v∇
 4v;
